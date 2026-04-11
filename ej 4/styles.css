@@ -1,0 +1,97 @@
+
+
+:root {
+  --color-fondo: #f0f0f0;
+  --color-texto: #222222;
+  --color-acento: #2c5f8a;
+  --fuente-principal: Arial, sans-serif;
+  --radio-borde: 6px;
+  --sombra: 0 2px 6px rgba(0, 0, 0, 0.15);
+  --espaciado: 1rem;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: var(--color-acento);
+  margin-bottom: 0.4rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+p, li {
+  margin-bottom: 0.3rem;
+}
+
+ul, ol {
+  padding-left: 1.2rem;
+}
+
+a {
+  color: var(--color-acento);
+}
+
+
+
+.barra-nav {
+  background-color: var(--color-acento);
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.barra-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.barra-nav a:hover {
+  text-decoration: underline;
+}
+
+.contenedor {
+  max-width: 750px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaciado);
+}
+
+.seccion {
+  background-color: white;
+  padding: var(--espaciado);
+  border-radius: var(--radio-borde);
+  box-shadow: var(--sombra);
+}
+
+.fila {
+  display: flex;
+  gap: var(--espaciado);
+  flex-wrap: wrap;
+}
+
+.fila .seccion {
+  flex: 1 1 200px;
+}
