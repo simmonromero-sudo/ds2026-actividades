@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+            max-width: 700px;
+            margin: 40px;
+            padding: 0 16px;
+        }
+        #error{
+            color: red;
+            display: none;
+        }
+        #cargando{
+            display: none;
+        }
+        #resultado{
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 12 px;
+            margin-top: 20px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 12px;
+        }
+        .card h3{
+            margin: 0 0 6px;
+            font-size: 1rem;
+
+        }
+        .card p{
+            margin: 0;
+            font-size: .85rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Buscador de libros</h1>
+
+    <input id="input-busqueda" type="text" placeholder="Ej: Harry Potter">
+    <button id="btn-buscar">Buscar</button>
+
+    <p id="error"></p>
+    <p id="cargando">Cargando...</p>
+    <div id="resultados">
+
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
